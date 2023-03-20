@@ -11,6 +11,10 @@ pool:
 
 steps:
   - task: PowerShell@2
-    displayName: Power shell script
     inputs:
-      filePath: 'TestPS.ps1'
+      targetType: 'inline'
+      script: |
+        # Write your PowerShell commands here.
+        
+        echo '$(System.DefaultWorkingDirectory)'
+        dir
