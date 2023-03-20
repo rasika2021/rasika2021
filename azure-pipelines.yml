@@ -16,5 +16,4 @@ steps:
       script: |
         # Write your PowerShell commands here.
         
-        echo '$(System.DefaultWorkingDirectory)'
-        dir
+        Write-Host "Hello World"
