@@ -10,6 +10,6 @@ pool:
   vmImage: windows-latest
 
 steps:
-  - task: PowerShell@2
+  - task: AzurePowerShell@5
     inputs:
-      filePath: '$(System.DefaultWorkingDirectory)/TestPS.ps1'
+      ScriptType: 'InlineScript'
